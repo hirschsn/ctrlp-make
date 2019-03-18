@@ -2,7 +2,7 @@
 
 Vim [ctrl-p](https://github.com/ctrlpvim/ctrlp.vim) for Makefile targets.
 
-![screenshot][https://github.com/hirschsn/ctrlp-make/screenshot.png]
+![screenshot](https://github.com/hirschsn/ctrlp-make/blob/master/screenshot.png)
 
 ## Install
 
