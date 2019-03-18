@@ -9,7 +9,6 @@ if exists('g:loaded_ctrlp_make') && g:loaded_ctrlp_make
 endif
 let g:loaded_ctrlp_make = 1
 
-
 if !exists('g:ctrlp_ext_vars') || empty(g:ctrlp_ext_vars)
     let g:ctrlp_ext_vars = []
 endif
@@ -26,13 +25,11 @@ call add(g:ctrlp_ext_vars, {
             \ 'specinput': 0,
             \ })
 
-
 function! ctrlp#make#init()
     let fn = 'Makefile'
     let input = filereadable(fn)? map(filter(readfile(fn), 'v:val =~ "\\w\\+:$"'), 'substitute(v:val, ":", "", "")'): []
     return input
 endfunction
-
 
 function! ctrlp#make#accept(mode, str)
     call ctrlp#exit()
