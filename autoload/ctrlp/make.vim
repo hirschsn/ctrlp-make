@@ -16,8 +16,8 @@ endif
 call add(g:ctrlp_ext_vars, {
             \ 'init': 'ctrlp#make#init()',
             \ 'accept': 'ctrlp#make#accept',
-            \ 'lname': 'long statusline name',
-            \ 'sname': 'shortname',
+            \ 'lname': 'make',
+            \ 'sname': 'make',
             \ 'type': 'line',
             \ 'enter': 'ctrlp#make#enter()',
             \ 'exit': 'ctrlp#make#exit()',
