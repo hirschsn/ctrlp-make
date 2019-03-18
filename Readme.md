@@ -9,3 +9,7 @@ Vim [ctrl-p](https://github.com/ctrlpvim/ctrlp.vim) for Makefile targets.
 1. Use your favourite vim package manager.
 2. Add a keybinding, e.g. `nmap <c-m> <plug>(ctrlp-make)` to your .vimrc.
 
+## License
+
+MIT license
+
