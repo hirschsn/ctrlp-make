@@ -27,7 +27,7 @@ call add(g:ctrlp_ext_vars, {
 
 function! ctrlp#make#init()
     let fn = 'Makefile'
-    let input = filereadable(fn)? map(filter(readfile(fn), 'v:val =~ "\\w\\+:$"'), 'substitute(v:val, ":", "", "")'): []
+    let input = filereadable(fn)? map(filter(readfile(fn), 'v:val =~ "\\w\\+:"'), 'substitute(v:val, ":.*$", "", "")'): []
     return input
 endfunction
 
