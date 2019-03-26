@@ -29,7 +29,8 @@ function! ctrlp#make#init()
     let fns = ['Makefile', 'makefile']
     for fn in fns
         if filereadable(fn)
-            return map(filter(readfile(fn), 'v:val =~ "\\w\\+:"'), 'substitute(v:val, ":.*$", "", "")')
+            return map(filter(readfile(fn), 'v:val =~ "\\w\\+:"'),
+                       \'substitute(v:val, ":.*$", "", "")')
         endif
     endfor
     return []
